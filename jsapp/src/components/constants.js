@@ -1,0 +1,2 @@
+//export const backendurl = process.env.NODE_ENV === 'production'?'https://userprateek-express.herokuapp.com/':'http://localhost:5000/';
+export const backendurl = 'https://userprateek-express.herokuapp.com/';

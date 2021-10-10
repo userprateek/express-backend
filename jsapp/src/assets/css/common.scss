@@ -1,0 +1,47 @@
+$bgurl: url("../img/background-gcec1c97f0_1920.jpg");
+$primary: var(--primary, rgba(174, 10, 249, 0.7));
+$secondary: var(--secondary, rgba(231, 17, 106, 0.9));
+$white: rgb(255, 255, 255);
+$lightwhite: rgba(255, 255, 255, 0.6);
+$black: rgb(0, 0, 0);
+$highlight: rgb(66, 174, 240);
+$highlight2: #e5f6fd;
+$lightText: #666;
+$darkText: #1f1f1f;
+$errorText: rgb(255, 10, 10);
+$border: #ddd;
+$borderDark: #838383;
+$background: #eee;
+$errorBackground: #fdf2e2;
+$successBackground: #50b16b;
+$buttoncolor: #ffbdbd;
+html {
+	height: 100%;
+}
+body {
+	background-color: $primary;
+	font: 16px/1.6 Roboto, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+	}
+	h1,
+	.social-header {
+		text-transform: uppercase;
+	}
+	.navigation-extendable a,
+	.social-icons.social-icons a {
+		text-decoration: none;
+	}
+	#root {
+		height: 100%;
+	}
+}

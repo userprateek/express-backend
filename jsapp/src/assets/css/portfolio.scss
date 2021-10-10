@@ -1,0 +1,55 @@
+.site-main-inner-portfolio {
+	margin-left: 25%;
+}
+.portfolio-section {
+	background: $white;
+	width: 100%;
+	min-height: 100vh;
+	display: block;
+	padding: 50px 0 0 0;
+	h2,
+	p {
+		padding-left: 50px;
+	}
+	.timeline.portfolio-timeline {
+		position: relative;
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+	}
+	.timeline_element.project {
+		position: relative;
+	}
+	.timeline_element-date {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 160px;
+		padding: 30px 15px;
+		padding-top: 30px;
+		color: $borderDark;
+		text-align: right;
+		font-style: italic;
+		line-height: 30px;
+		border-right: 1px solid #ddd;
+	}
+	.timeline_element-contents {
+		padding: 30px 0;
+		margin-left: 210px;
+	}
+}
+.timeline_element + .timeline_element .timeline_element-contents {
+	border-top: 1px solid #ddd;
+}
+.timeline_element-date::after {
+	content: " ";
+	position: absolute;
+	top: 42.5px;
+	right: -2.5px;
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: $secondary;
+}

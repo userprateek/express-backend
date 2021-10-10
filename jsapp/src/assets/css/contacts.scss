@@ -1,0 +1,72 @@
+.site-main-inner-contactme {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin-left: 25%;
+	padding: 50px;
+	background: $white;
+	.block-title a,
+	.social-icons.social-icons a {
+		color: $secondary;
+	}
+	.contactform {
+		max-width: 300px;
+	}
+	.inputlable {
+		display: block;
+		position: relative;
+		margin: 10px 0 0 0;
+		input {
+			width: 100%;
+			box-sizing: border-box;
+			border: 1px solid $primary;
+			padding: 5px;
+			border-radius: 5px;
+			color: $primary;
+			&:focus-visible {
+				outline: 2px solid $secondary;
+			}
+			&[tpye="submit"] {
+				background: $secondary;
+			}
+		}
+		input[type="submit"] {
+			background: $buttoncolor;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.placeholderspan {
+			position: absolute;
+			left: 5px;
+			top: 2px;
+			padding: 0 2px;
+			color: $primary;
+		}
+	}
+	textarea {
+		display: block;
+		width: 100%;
+		margin: 10px 0 0;
+		box-sizing: border-box;
+		color: $primary;
+		border: 1px solid $primary;
+		border-radius: 5px;
+		padding: 5px;
+		&:focus-visible {
+			outline: 2px solid $secondary;
+		}
+		&::placeholder {
+			color: $primary;
+		}
+	}
+	.placeholderspan.active {
+		top: -3px;
+		font-size: 12px;
+		background: $white;
+		left: 5px;
+		line-height: 1;
+		color: $secondary;
+	}
+}

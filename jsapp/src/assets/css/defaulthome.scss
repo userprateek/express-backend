@@ -1,0 +1,75 @@
+.home-section {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding-left: 130px;
+	padding-top: 110px;
+	background: $bgurl top center no-repeat #bababa;
+	background-size: 100%;
+	color: $white;
+	.home-section-inner {
+		margin-left: 25%;
+		box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.1),
+			3px 3px 1px rgba(255, 255, 255, 0.4);
+		padding: 20px;
+		margin-right: 100px;
+		h2 {
+			font-weight: 400;
+			font-size: 2em;
+		}
+	}
+	.home-heading {
+		font-size: 20px;
+		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+		font-size: 3em;
+		font-weight: 500;
+	}
+	.home-button {
+		margin: 30px 100px auto 25%;
+		padding: 20px;
+		.home-button-link {
+			padding: 10px;
+			border: 1px solid #fff;
+			margin: 10px;
+			text-decoration: none;
+			display: flex;
+			width: 100px;
+			justify-content: center;
+			align-items: center;
+			color: $white;
+			font-size: 16px;
+			text-transform: uppercase;
+			box-shadow: inset 1px 47px 0 rgba(0, 0, 0, 0.2);
+			font-weight: 500;
+		}
+	}
+}
+.error-page {
+	width: 100%;
+	height: 100%;
+	padding: 40px 20px;
+	box-sizing: border-box;
+	background: $bgurl top center no-repeat $white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $white;
+	font-size: 30px;
+
+	.heading-404 {
+		font-size: 40px;
+		margin: 40px;
+		font-weight: bold;
+	}
+	.home-link {
+		border: 1px solid;
+		box-shadow: 1px 2px 3px 2px rgb(54, 54, 54);
+		text-decoration: none;
+		background: $white;
+		padding: 5px;
+		margin: 10px;
+	}
+}
