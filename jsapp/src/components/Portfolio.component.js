@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./navbar.component";
 import Pfrecords from "./PortfolioRecord.component";
 import axios from "axios";
-import { backendurl } from "./constants";
 
 class Portfolio extends React.Component {
 	constructor(props) {
@@ -13,7 +12,7 @@ class Portfolio extends React.Component {
 	}
 
 	componentDidMount() {
-		const url = backendurl + "profiledata/";
+		const url = "/profiledata/";
 		axios
 			.get(url)
 			.then((res) => {
