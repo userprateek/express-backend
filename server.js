@@ -3,17 +3,14 @@ const compression = require("compression");
 const path = require("path");
 const cors = require("cors");
 const mongoose = require("mongoose");
-var bodyParser = require("body-parser");
+const formData = require('express-form-data');
 const app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
 require("dotenv").config();
-
 const port = process.env.PORT || 5500;
-
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(formData.parse());
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, { useNewUrlParser: true });

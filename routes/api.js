@@ -6,7 +6,6 @@ router.route("/").get((req, res) => {
 		.catch((err) => res.status(400).json("Error: " + err));
 });
 router.route("/contactrequst").post((req, res) => {
-	console.log(req.body);
 	const name = req.body.name;
 	const email = req.body.email;
 	const phone = req.body.phone;
@@ -15,7 +14,7 @@ router.route("/contactrequst").post((req, res) => {
 
 	newMessages
 		.save()
-		.then(() => res.json("Profile added!"))
+		.then(() => res.json("message sent"))
 		.catch((err) => res.status(400).json("Error: " + err));
 });
 module.exports = router;

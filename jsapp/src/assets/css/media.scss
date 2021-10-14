@@ -1,71 +1,121 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1000px) {
-	
-	.site-sidebar {
-		top: auto;
-		bottom: auto;
-		left: auto;
-		right: auto;
-		position: relative;
-		width: auto;
-		padding-top: 40px;
-		padding-bottom: 0;
-	}
-	.site-main::before{
-		display: none;
-	}
-	.site-main-inner-portfolio {
-		margin-left: 0;
-	}
-	.site-main-inner-contactme{
-		position: relative;
-	}
+    body {
+        background: $bgurl;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        .site-main-inner-contactme {
+            background: none;
+        }
+    }
+    .site-sidebar {
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        position: relative;
+        width: auto;
+        padding-bottom: 0;
+        &-inner {
+            padding: 0;
+            .compactnav {
+                display: flex;
+            }
+        }
+    }
+    .profile {
+        display: none;
+    }
+    .site-main::before {
+        display: none;
+    }
+    .site-main-inner-portfolio {
+        margin-left: 0;
+    }
+    .site-main-inner-contactme {
+        position: inherit;
+        margin: 0;
+    }
+    .main-navigation {
+        margin: 0;
+    }
+    .navigation-extendable {
+        display: none;
+    }
+    .social {
+        display: none;
+    }
+    .portfolio-section {
+        padding: 20px;
+        width: 100%;
+        height: auto;
+        .timeline_element.project {
+            padding: 10px 0;
+            border: solid #ccc;
+            border-width: 1px 0 0 0;
+        }
+        .timeline_element-date {
+            position: initial;
+            width: 100%;
+            text-align: left;
+            padding: 0;
+            line-height: 1;
+            &::after {
+                display: none;
+            }
+        }
+        .timeline_element-contents {
+            padding: 15px 0;
+            margin: 0;
+        }
+    }
+    .timeline_element + .timeline_element .timeline_element-contents {
+        border: none;
+    }
+    .home-section {
+        position: initial;
+        background: none;
+        padding: 25px;
+        font-size: 10px;
+        &-inner {
+            margin: 0;
+            padding: 10px;
+        }
+        .home-button {
+            margin: 20px 0 0;
+            padding: 0;
+            .home-button-link {
+                margin: 10px 0;
+            }
+        }
+    }
+    .portfolio-section h2,
+    .portfolio-section p {
+        padding: 0;
+    }
+}
+@media only screen and (min-width: 769px) {
+}
+@media only screen and (max-width: 768px) {
 }
 @media only screen and (max-width: 600px) {
-	.site-sidebar {
-		width: 100%;
-		position: initial;
-		display: block;
-	}
-	.site-main::before {
-		z-index: -1;
-	}
-	.home-section {
-		position: initial;
-		background: none;
-		padding: 25px;
-		.home-section-inner {
-			margin: 0;
-			padding: 0;
-		}
-	}
-	body {
-		background: $bgurl;
-		background-repeat: no-repeat;
-		background-size: auto 100%;
-		overflow: hidden;
-	}
-	#root {
-		height: 100vh;
-		overflow: scroll;
-	}
-	.site-main-inner-portfolio {
-		margin: 0;
-	}
-	.site-main-inner-contactme {
-		position: inherit;
-		margin: 0;
-	}
-	.portfolio-section .timeline_element-contents {
-		padding: 30px 0;
-		margin-left: 25px;
-	}
-	.portfolio-section .timeline_element-date {
-		position: initial;
-	}
-	.portfolio-section h2,
-	.portfolio-section p {
-		padding-left: 25px;
-	}
+    .site-sidebar {
+        width: 100%;
+        position: initial;
+        display: block;
+    }
+    .site-main::before {
+        z-index: -1;
+    }
+    #root {
+        height: 100vh;
+        overflow: scroll;
+    }
+    .site-main-inner-portfolio {
+        margin: 0;
+    }
 }
-
+//Phone
+@media only screen and (max-width: 320px) {
+}
