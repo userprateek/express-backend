@@ -32,7 +32,6 @@ app.use(
 	})
 );
 app.use(express.static(path.join(__dirname, "./jsapp/build")));
-//const exercisesRouter = require('./routes/exercises');
 const usersRouter = require("./routes/user");
 const profileRouter = require("./routes/profiledata");
 const apiRouter = require("./routes/api");
