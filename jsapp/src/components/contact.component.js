@@ -9,7 +9,7 @@ function Contacts() {
         event.preventDefault();
         const isvalid = validateinputs();
         if (isvalid) {
-            const apiurl = "/api/sendmailt";
+            const apiurl = "/api/sendmail";
             axios
                 .post(apiurl, formdata)
                 .then(function (response) {
